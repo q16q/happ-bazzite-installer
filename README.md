@@ -1,4 +1,4 @@
-<h1 align="center">happ-steamdeck-installer</h1>
+<h1 align="center">happ-bazzite-installer</h1>
 
 <p align="center">
   <a href="https://github.com/Happ-proxy/happ-desktop"><img src="https://img.shields.io/badge/Happ-Desktop-2563eb?style=flat" alt="Happ Desktop"></a>

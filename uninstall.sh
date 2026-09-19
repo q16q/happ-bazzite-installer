@@ -62,6 +62,9 @@ if [[ -f "${BIN_PATH}" || -L "${BIN_PATH}" ]]; then
   info "Removed ${BIN_PATH}"
 fi
 
+sudo semanage fcontext -d "${HAPP_OPT_DIR}/bin/happd"
+sudo restorecon -v "${HAPP_OPT_DIR}/bin/happd"
+
 if [[ -d "${HAPP_OPT_DIR}" ]]; then
   rm -rf "${HAPP_OPT_DIR}"
   removed=1

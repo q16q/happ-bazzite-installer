@@ -36,7 +36,7 @@
 
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/DeadFlamingo/happ-steamdeck-installer/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/q16q/happ-bazzite-installer/main/install.sh | bash
 ```
 >In Konsole (Desktop Mode on Steam Deck). The script will ask for your **sudo** password once to enable `happd` (TUN/VPN).
 
@@ -44,7 +44,7 @@ curl -fsSL https://raw.githubusercontent.com/DeadFlamingo/happ-steamdeck-install
 ## Uninstall
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/DeadFlamingo/happ-steamdeck-installer/main/uninstall.sh | bash
+curl -fsSL https://raw.githubusercontent.com/q16q/happ-bazzite-installer/main/uninstall.sh | bash
 ```
 
 ## After installation

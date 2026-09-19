@@ -164,6 +164,12 @@ PY
 
 # --- install steps -----------------------------------------------------------
 
+configure_selinux() {
+  local opt_src="${STAGING_DIR}/opt/happ"
+  sudo semanage fcontext -a -t bin_t "${opt_src}/bin/happd"
+  sudo restorecon -v "${opt_src}/bin/happd"
+}
+
 install_happ_payload() {
   local opt_src="${STAGING_DIR}/opt/happ"
 
@@ -179,6 +185,7 @@ install_happ_payload() {
 exec "${HAPP_BIN}" "\$@"
 EOF
   chmod +x "${BIN_DIR}/happ"
+  configure_selinux
   ensure_happ_executables
 }
 
